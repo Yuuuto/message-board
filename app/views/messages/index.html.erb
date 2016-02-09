@@ -6,7 +6,7 @@
     <% @messages.each do |message| %>
       <span class="label label-info"><%= message.name %></span>
     <%= message.body %>
-    <br>
+    <br/>
     <% end %>
   </div>
 </div>
@@ -14,8 +14,10 @@
 <%= form_for(@message) do |f| %>
   名前:
   <%= f.text_field :name %>
-
+<br>
   内容:
-  <%= f.text_field :body %>
+  <%= f.text_area :body,:size => "18x2" %>
   <%= f.submit %>
 <% end %>
+
+
