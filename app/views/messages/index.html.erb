@@ -1,3 +1,15 @@
+<%= form_for(@message) do |f| %>
+  <label>名前:
+  <%= f.text_field :name %></label>
+<br/>
+  <label>内容:
+  <%= f.text_area :body,:size => "19x3" %>  </label>
+  <%= f.submit %>
+
+
+<% end %>
+
+
 <div class = "panel panel-default">
   <div class="panel-heading">
     メッセージ一覧
@@ -11,13 +23,6 @@
   </div>
 </div>
 
-<%= form_for(@message) do |f| %>
-  名前:
-  <%= f.text_field :name %>
-<br>
-  内容:
-  <%= f.text_area :body,:size => "18x2" %>
-  <%= f.submit %>
-<% end %>
+
 
 
