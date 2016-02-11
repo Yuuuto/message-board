@@ -1,0 +1,35 @@
+[33mcommit e72f051b28ecd18d552db3bafea6553540860dd1[m
+Author: yuuuto <takeetsudaiyuu@gmail.com>
+Date:   Tue Feb 9 15:43:24 2016 +0000
+
+    homework
+
+[33mcommit fad3fc368e2757356cb29717819bd646ea913d2d[m
+Author: yuuuto <takeetsudaiyuu@gmail.com>
+Date:   Tue Feb 9 14:30:08 2016 +0000
+
+    This is sample commit
+
+[33mcommit 6a8d53c0b1a61badeea9e1178f32c717d0635b2e[m
+Author: yuuuto <takeetsudaiyuu@gmail.com>
+Date:   Sun Feb 7 16:33:44 2016 +0000
+
+    using Bootstrap
+
+[33mcommit aa7832ef18252790a4929076be733ed93b4421c4[m
+Author: yuuuto <takeetsudaiyuu@gmail.com>
+Date:   Sun Feb 7 16:12:23 2016 +0000
+
+    create message model
+
+[33mcommit dbdf63e622be0703c8c7d23bfbf2bf3df9d8ab05[m
+Author: yuuuto <takeetsudaiyuu@gmail.com>
+Date:   Sun Feb 7 11:23:26 2016 +0000
+
+    create messages_controller
+
+[33mcommit 1e6b30f34ae7bae659e494bb114b737e909e87af[m
+Author: yuuuto <takeetsudaiyuu@gmail.com>
+Date:   Sun Feb 7 11:13:06 2016 +0000
+
+    first commit
