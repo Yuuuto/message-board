@@ -8,14 +8,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Message Board</a>
+<% if notice %>
+
+      <div class="alert alert-info">
+        
+<%= notice %>
+
       </div>
+    
+<% end %>
     </div>
-  </nav>
-    <div class="container">
+
     <%= yield %>
     </div>
 </body>
