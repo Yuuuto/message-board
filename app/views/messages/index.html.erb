@@ -1,33 +1,33 @@
 
-<%= form_for(@message, :html => {:class => "form-horizontal"}) do |f| %>
+<!--%= form_for(@message, :html => {:class => "form-horizontal"}) do |f| %>-->
     
     
     
-    <div class= "form-group">
-      <label class= "col-sm-2 control-label">名前:</label>
-      <div class="col-sm-4"> 
-        <%= f.text_field :name , class: "form-control" %>
-      </div> 
-      <div class= "col-sm-6"></div> <!-- col調整用 -->
-    </div>
+<!--    <div class= "form-group">-->
+<!--      <label class= "col-sm-2 control-label">名前:</label>-->
+<!--      <div class="col-sm-4"> -->
+<!--        %= f.text_field :name , class: "form-control" %>-->
+<!--      </div> -->
+<!--      <div class= "col-sm-6"></div> <!-- col調整用 -->
+<!--    </div>-->
     
-    <div class="form-group">
-      <label class= "col-sm-2 control-label">内容:</label>
-      <div class= "col-sm-8">
-       <%= f.text_area :body, class: "form-control" %>  
-      </div>
-      <div class= "col-sm-2"></div>　<!-- col調整用 -->
-    </div>
+<!--    <div class="form-group">-->
+<!--      <label class= "col-sm-2 control-label">内容:</label>-->
+<!--      <div class= "col-sm-8">-->
+<!--       %= f.text_area :body, class: "form-control" %>  -->
+<!--      </div>-->
+<!--      <div class= "col-sm-2"></div>　<!-- col調整用 -->
+<!--    </div>-->
     
-    <div class="form-group">
-      <div class= "col-sm-offset-2 col-sm-10">
-         <%= f.submit class: "btn btn-primary" %>
-      </div>
-    </div>
+<!--    <div class="form-group">-->
+<!--      <div class= "col-sm-offset-2 col-sm-10">-->
+<!--         %= f.submit class: "btn btn-primary" %>-->
+<!--      </div>-->
+<!--    </div>-->
 
-<% end %>
+<!--% end %>-->
 
-  <div class= "col-sm-offset-2 col-sm-8 paddingZero">
+  <!--<div class= "col-sm-offset-2 col-sm-8 paddingZero">-->
     <div class = "panel panel-default">
       <div class="panel-heading">
         メッセージ一覧
@@ -40,11 +40,50 @@
         <% end %>
       </div>
     </div>
-  </div>
+  <!--</div>-->
 <!--</div>-->
 
 
+<%= form_for(@message) do |f| %>
 
+  
+<% if @message.errors.present? %>
+
+    <div class="alert alert-danger">
+      
+<%= alert %>
+
+      <ul>
+        
+<% @message.errors.full_messages.each do |full_message| %>
+
+          <li>
+            
+<%= full_message %>
+
+          </li>
+        
+<% end %>
+ 
+      </ul>
+    </div>
+  
+<% end %>
+
+
+  名前:
+  
+<%= f.text_field :name %>
+
+
+  内容:
+  
+<%= f.text_field :body %>
+
+  
+<%= f.submit class: "btn btn-sm btn-primary" %>
+
+<% end %>
 
 
 
