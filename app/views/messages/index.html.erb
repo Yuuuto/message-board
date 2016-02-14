@@ -1,4 +1,8 @@
-<%= form_for(Message.new, :html => {:class => "form-horizontal"}) do |f| %>  
+
+<%= form_for(@message, :html => {:class => "form-horizontal"}) do |f| %>
+    
+    
+    
     <div class= "form-group">
       <label class= "col-sm-2 control-label">名前:</label>
       <div class="col-sm-4"> 
@@ -10,7 +14,7 @@
     <div class="form-group">
       <label class= "col-sm-2 control-label">内容:</label>
       <div class= "col-sm-8">
-        <%= f.text_area :body, class: "form-control" %>  
+       <%= f.text_area :body, class: "form-control" %>  
       </div>
       <div class= "col-sm-2"></div>　<!-- col調整用 -->
     </div>
@@ -23,7 +27,7 @@
 
 <% end %>
 
-<div class= "col-sm-offset-2 col-sm-8">
+  <div class= "col-sm-offset-2 col-sm-8 paddingZero">
     <div class = "panel panel-default">
       <div class="panel-heading">
         メッセージ一覧
@@ -36,7 +40,12 @@
         <% end %>
       </div>
     </div>
+  </div>
+<!--</div>-->
 
-</div>
+
+
+
+
 
 
