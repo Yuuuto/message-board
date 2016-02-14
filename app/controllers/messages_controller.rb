@@ -40,7 +40,7 @@ class MessagesController < ApplicationController
 # クラス内でしか呼ばれない
   private   
   def message_params
-    params.require(:message).permit(:name, :body) #ストロングパラメータ。フィルター
+    params.require(:message).permit(:name, :age, :body) #ストロングパラメータ。宣言。フィルター。paramsはformの情報をゲット
   end
   def set_message
     @message = Message.find(params[:id])

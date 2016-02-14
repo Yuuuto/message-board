@@ -27,7 +27,13 @@
 
 <!--% end %>-->
 
-  <!--<div class= "col-sm-offset-2 col-sm-8 paddingZero">-->
+<%#部分点プレートの読み込み%>
+
+<%= render 'form'%>
+
+
+
+  <div class= "col-sm-offset-3 col-sm-6 paddingZero">
     <div class = "panel panel-default">
       <div class="panel-heading">
         メッセージ一覧
@@ -35,6 +41,7 @@
       <div class ="panel-body">
         <% @messages.each do |message| %>
         <span class="label label-success"><%= message.name %></span>
+        <%= message.age %>才/
         <%= message.body %>
         (
           <%= link_to "edit" , edit_message_path(message) %>
@@ -44,11 +51,9 @@
         <% end %>
       </div>
     </div>
-  <!--</div>-->
+  </div>
 <!--</div>-->
 
-<%#部分点プレートの読み込み%>
 
-<%= render 'form'%>
 
 
